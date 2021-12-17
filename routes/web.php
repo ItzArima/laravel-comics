@@ -53,3 +53,8 @@ Route::get('/news', function () {
 Route::get('/shop', function () {
     return view('shop');
 })->name('shop');
+
+Route::get('/single/{id}', function ($id) {
+    $comics = config('db');
+    return view('single',compact('comics','id'));
+})->name('single');

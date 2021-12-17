@@ -10,9 +10,9 @@
             </div>
         </div>
         <div class="comicses-container">
-            @foreach ($comicses as $comics)
+            @foreach ($comicses as $key=>$comics)
                 <div class="comics">
-                    <img src="{{$comics['thumb']}}" alt="">
+                    <a href="{{route('single' , $key)}}"><img src="{{$comics['thumb']}}" alt=""></a>
                     <h4>{{$comics['series']}}</h4>
                 </div>    
             @endforeach    

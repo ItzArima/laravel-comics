@@ -14,12 +14,17 @@
 
     </head>
     <body>
+        <!-- Header -->
         @include('partials.header')
-        <main>
-            @yield('content')
-        </main>    
+        
+        <!-- Main -->
+        @yield('content') 
+        
+
+        <!-- Footer -->
         @include('partials.footer')
 
+        <!-- Script -->
         @yield('script')
     </body>
 </html>
