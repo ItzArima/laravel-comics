@@ -12,17 +12,17 @@
             <img src="../img/dc-logo.png" alt="" srcset="">
         </div>
         <nav>
-            <a href="{{route('characters')}}">CHARACTERS</a>
-            <a href="{{route('comics')}}">COMICS</a>
-            <a href="{{route('movies')}}">MOVIES</a>
-            <a href="{{route('tv')}}">TV</a>
-            <a href="{{route('games')}}">GAMES</a>
-            <a href="{{route('collectibles')}}">COLLECTIBLES</a>
-            <a href="{{route('videos')}}">VIDEOS</a>
-            <a href="{{route('fans')}}">FANS</a>
-            <a href="{{route('news')}}">NEWS</a>    
+            <a id="characters" href="{{route('characters')}}">CHARACTERS</a>
+            <a id="comics" href="{{route('comics')}}">COMICS</a>
+            <a id="movies" href="{{route('movies')}}">MOVIES</a>
+            <a id="tv" href="{{route('tv')}}">TV</a>
+            <a id="games" href="{{route('games')}}">GAMES</a>
+            <a id="collectibles" href="{{route('collectibles')}}">COLLECTIBLES</a>
+            <a id="videos" href="{{route('videos')}}">VIDEOS</a>
+            <a id="fans" href="{{route('fans')}}">FANS</a>
+            <a id="news" href="{{route('news')}}">NEWS</a>    
             <div class="shop-select">
-                <a href="{{route('shop')}}">SHOP</a>
+                <a id="shop" href="{{route('shop')}}">SHOP</a>
                 <p>&dtrif;</p>
             </div>        
         </nav>

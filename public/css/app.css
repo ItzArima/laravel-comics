@@ -5,12 +5,21 @@
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
+
 header .header-top-bar {
   background-color: #0282f9;
   color: white;
   display: flex;
   justify-content: right;
   padding: 0 10rem;
+  height: 25px;
+  align-items: center;
 }
 
 header .header-top-bar select {
@@ -20,15 +29,21 @@ header .header-top-bar select {
   margin-left: 2rem;
 }
 
+header .header-top-bar select:focus {
+  outline: none;
+}
+
 header .header-main {
   display: flex;
   height: 70px;
   justify-content: space-between;
-  padding: 0.25rem 10rem;
+  padding: 0 10rem;
+  background-color: white;
 }
 
 header .header-main .logo-container {
   width: 10%;
+  padding: 0.25rem 0;
 }
 
 header .header-main .logo-container img {
@@ -45,6 +60,7 @@ header .header-main nav {
 header .header-main nav .shop-select {
   display: flex;
   align-items: center;
+  height: 100%;
 }
 
 header .header-main nav .shop-select p {
@@ -54,6 +70,20 @@ header .header-main nav .shop-select p {
 header .header-main nav a {
   text-decoration: none;
   color: #464646;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  border-bottom: 4px solid transparent;
+}
+
+header .header-main nav a:hover {
+  color: #0282f9;
+  border-bottom: 4px solid #0282f9;
+}
+
+header .header-main nav .active {
+  color: #0282f9;
+  border-bottom: 4px solid #0282f9;
 }
 
 header .header-main .search-container {
@@ -186,5 +216,66 @@ footer .sing-up-container .follow-us-container img {
 
 footer .sing-up-container .follow-us-container img:last-of-type {
   margin-right: 0;
+}
+
+main {
+  background-color: #1c1c1c;
+}
+
+main .jumbo-container {
+  position: relative;
+  height: 500px;
+}
+
+main .jumbo-container img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  -o-object-position: center 0;
+     object-position: center 0;
+}
+
+main .jumbo-container .title {
+  position: absolute;
+  bottom: -20px;
+  background-color: #0282f9;
+  left: 9rem;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 1rem;
+  color: white;
+}
+
+main .comicses-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 9rem;
+  justify-content: space-between;
+}
+
+main .comicses-container .comics {
+  width: 16.6666666667%;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1rem;
+  color: white;
+}
+
+main .comicses-container .comics img {
+  margin-bottom: 1rem;
+}
+
+main .button-container {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+
+main .button-container button {
+  background-color: #0282f9;
+  padding: 0.5rem;
+  border: 0;
+  color: white;
 }
 
