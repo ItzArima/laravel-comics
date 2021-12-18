@@ -7,11 +7,11 @@
 @section('content')
     <main>
         <div class="jumbo-container">
-            <img src="../img/jumbotron.jpg" alt="">
+            <img src="{{asset('img/jumbotron.jpg')}}" alt="">
         </div>
         <div class="blue-bar">
             <div class="card">
-                <img src="{{$comics[$id]['thumb']}}" alt="">
+                <img src="{{$comics['thumb']}}" alt="">
                 <div class="top">
                     <p>COMIC BOOK</p>
                 </div>
@@ -24,11 +24,11 @@
             <div class="description-container">
                 <div class="description">
                     <div class="title">
-                        <h1>{{$comics[$id]['title']}}</h1>
+                        <h1>{{$comics['title']}}</h1>
                     </div>
                     <div class="green-bar">
                         <div class="left">
-                            <p>U.S. Price <em>{{$comics[$id]['price']}}</em></p>
+                            <p>U.S. Price <em>{{$comics['price']}}</em></p>
                             <p>AVIABLE</p>
                         </div>
                         <div class="right">
@@ -36,7 +36,7 @@
                         </div>
                     </div>
                     <div class="desc-text">
-                        <p>{{$comics[$id]['description']}}</p>
+                        <p>{{$comics['description']}}</p>
                     </div>
                 </div>
                 <div class="advertisement">
@@ -53,7 +53,7 @@
                         <div class="artists-container">
                             <p class="title"><strong>Art by:</strong></p>
                             <div class="artists">
-                                @foreach ($comics[$id]['artists'] as $artist)
+                                @foreach ($comics['artists'] as $artist)
                                     <a href="#">{{$artist}}</a>
                                     @if(!$loop->last)
                                         <span>,</span>
@@ -64,7 +64,7 @@
                         <div class="writers-container">
                             <p class="title"><strong>Written by:</strong></p>
                             <div class="writers">
-                                @foreach ($comics[$id]['writers'] as $writer)
+                                @foreach ($comics['writers'] as $writer)
                                     <a href="#">{{$writer}}</a>
                                     @if(!$loop->last)
                                         <span>,</span>
@@ -77,15 +77,15 @@
                         <h2>Specs</h2>
                         <div class="series">
                             <p class="title"><strong>Series</strong></p>
-                            <a href="#">{{$comics[$id]['series']}}</a>
+                            <a href="#">{{$comics['series']}}</a>
                         </div>
                         <div class="price">
                             <p class="title"><strong>U.S. Price:</strong></p>
-                            <p>{{$comics[$id]['price']}}</p>
+                            <p>{{$comics['price']}}</p>
                         </div>
                         <div class="sale">
                             <p class="title"><strong>On Sale Date:</strong></p>
-                            <p>{{$comics[$id]['sale_date']}}</p>
+                            <p>{{$comics['sale_date']}}</p>
                         </div>
                     </div>
                 </div>    

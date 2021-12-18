@@ -15,7 +15,7 @@
         <div class="comicses-container">
             @foreach ($comicses as $key=>$comics)
                 <div class="comics">
-                    <a href="{{route('single' , $key)}}"><img src="{{$comics['thumb']}}" alt=""></a>
+                    <a href="{{route('single',['key' => $key, 'name' => $comics['title']])}}"><img src="{{$comics['thumb']}}" alt=""></a>
                     <h4>{{$comics['series']}}</h4>
                 </div>    
             @endforeach    

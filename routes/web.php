@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\SingleController;
 
 /*
 |--------------------------------------------------------------------------
@@ -54,7 +55,10 @@ Route::get('/shop', function () {
     return view('shop');
 })->name('shop');
 
-Route::get('/single/{id}', function ($id) {
+/* Route::get('/single/{id}', function ($id) {
     $comics = config('db');
     return view('single',compact('comics','id'));
 })->name('single');
+ */
+
+Route::get('/single/{key}/{name}', [SingleController::class, 'show'])->name('single');
