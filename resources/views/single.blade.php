@@ -85,7 +85,11 @@
                         </div>
                         <div class="sale">
                             <p class="title"><strong>On Sale Date:</strong></p>
-                            <p>{{$comics['sale_date']}}</p>
+                            <p>
+                                <?php 
+                                    echo date("F d Y" , strtotime($comics['sale_date'])) 
+                                ?>
+                            </p>
                         </div>
                     </div>
                 </div>    
