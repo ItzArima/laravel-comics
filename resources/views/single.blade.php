@@ -35,30 +35,81 @@
                             <p><strong>Check Availability</strong> &dtrif;</p>
                         </div>
                     </div>
+                    <div class="desc-text">
+                        <p>{{$comics[$id]['description']}}</p>
+                    </div>
                 </div>
                 <div class="advertisement">
                     <h4>ADVERTISEMENT</h4>
-                    <img src="{{asset('img/single.jpg')}}" alt="">
+                    <a href="#"><img src="{{asset('img/single.jpg')}}" alt=""></a>
                 </div>
             </div>
         </div>
+        <div class="single-info">
+            <div class="info-centered">
+                <div class="info-content">
+                    <div class="talent">
+                        <h2>Talent</h2>
+                        <div class="artists-container">
+                            <p class="title"><strong>Art by:</strong></p>
+                            <div class="artists">
+                                @foreach ($comics[$id]['artists'] as $artist)
+                                    <a href="#">{{$artist}}</a>
+                                    @if(!$loop->last)
+                                        <span>,</span>
+                                    @endif
+                                @endforeach
+                            </div>    
+                        </div>
+                        <div class="writers-container">
+                            <p class="title"><strong>Written by:</strong></p>
+                            <div class="writers">
+                                @foreach ($comics[$id]['writers'] as $writer)
+                                    <a href="#">{{$writer}}</a>
+                                    @if(!$loop->last)
+                                        <span>,</span>
+                                    @endif
+                                @endforeach
+                            </div>    
+                        </div>
+                    </div>
+                    <div class="specs">
+                        <h2>Specs</h2>
+                        <div class="series">
+                            <p class="title"><strong>Series</strong></p>
+                            <a href="#">{{$comics[$id]['series']}}</a>
+                        </div>
+                        <div class="price">
+                            <p class="title"><strong>U.S. Price:</strong></p>
+                            <p>{{$comics[$id]['price']}}</p>
+                        </div>
+                        <div class="sale">
+                            <p class="title"><strong>On Sale Date:</strong></p>
+                            <p>{{$comics[$id]['sale_date']}}</p>
+                        </div>
+                    </div>
+                </div>    
+            </div> 
+            <div class="info-footer">
+                <div class="info-link">
+                    <h4>DIGITAL COMICS</h4>
+                    <img src="{{asset('img/buy-comics-digital-comics.png')}}" alt="" srcset="">
+                </div>
+                <div class="info-link">
+                    <h4>SHOP DC</h4>
+                    <img src="{{asset('img/buy-comics-merchandise.png')}}" alt="" srcset="">
+                </div>
+                <div class="info-link">
+                    <h4>COMIC SHOP LOCATOR</h4>
+                    <img src="{{asset('img/buy-comics-shop-locator.png')}}" alt="" srcset="">
+                </div>
+                <div class="info-link">
+                    <h4>SUBSCRIPTIONS</h4>
+                    <img src="{{asset('img/buy-comics-subscriptions.png')}}" alt="" srcset="">
+                </div>
+            </div>   
+        </div>
     </main>
-
-    
-    
-    <p>{{$comics[$id]['price']}}</p>
-    <p>{{$comics[$id]['description']}}</p>
-    <h4>Artists</h4>
-    @foreach ($comics[$id]['artists'] as $artist)
-        <p>{{$artist}}</p>
-    @endforeach
-    <h4>Writers</h4>
-    @foreach ($comics[$id]['writers'] as $writer)
-        <p>{{$writer}}</p>
-    @endforeach
-    <p>{{$comics[$id]['series']}}</p>
-    <p>{{$comics[$id]['price']}}</p>
-    <p>{{$comics[$id]['sale_date']}}</p>
 @endsection
 
 @section('script')

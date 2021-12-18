@@ -7,7 +7,7 @@
 @section('content')
     <main>
         <div class="jumbo-container">
-            <img src="../img/jumbotron.jpg" alt="">
+            <img src="{{asset('img/jumbotron.jpg')}}" alt="">
             <div class="title">
                 <h2>CURRENT SERIES</h2>
             </div>

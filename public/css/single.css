@@ -19,11 +19,12 @@ main .blue-bar {
 
 main .blue-bar .card {
   position: absolute;
-  width: 15%;
+  width: 13%;
   bottom: 50%;
   left: 12rem;
-  border: 4px solid white;
+  border: 2px solid white;
   /* sometimes glitches */
+  color: white;
 }
 
 main .blue-bar .card img {
@@ -33,7 +34,9 @@ main .blue-bar .card img {
 main .blue-bar .card .top {
   position: absolute;
   top: 0;
+  left: 0;
   background-color: #00a9d9;
+  padding: 0 0.5rem;
 }
 
 main .blue-bar .card .bottom {
@@ -45,11 +48,20 @@ main .blue-bar .card .bottom {
 }
 
 main .single-content {
-  padding: 0 12rem;
+  padding: 3rem 12rem;
 }
 
 main .single-content .description-container {
   display: flex;
+}
+
+main .single-content .description-container .description {
+  padding-right: 3rem;
+}
+
+main .single-content .description-container .description .title {
+  color: #003f5e;
+  margin-bottom: 1.5rem;
 }
 
 main .single-content .description-container .description .green-bar {
@@ -57,11 +69,7 @@ main .single-content .description-container .description .green-bar {
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid #357739;
-}
-
-main .single-content .description-container .description .green-bar .left,
-main .single-content .description-container .description .green-bar .right {
-  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
 }
 
 main .single-content .description-container .description .green-bar .left {
@@ -69,5 +77,133 @@ main .single-content .description-container .description .green-bar .left {
   flex-grow: 1;
   display: flex;
   justify-content: space-between;
+  padding: 0.5rem 1rem;
+}
+
+main .single-content .description-container .description .green-bar .left p {
+  color: #baf890;
+}
+
+main .single-content .description-container .description .green-bar .left p em {
+  font-style: normal;
+  color: white;
+}
+
+main .single-content .description-container .description .green-bar .right {
+  padding: 0.5rem 1rem;
+  color: white;
+}
+
+main .single-content .description-container .advertisement h4 {
+  text-align: right;
+  color: #555555;
+}
+
+main .single-info {
+  background-color: #f6f6f6;
+  border-top: 1px solid lightgrey;
+}
+
+main .single-info .info-centered {
+  padding: 0 12rem;
+}
+
+main .single-info .info-centered .info-content {
+  display: flex;
+  padding-top: 1.5rem;
+  padding-bottom: 5rem;
+}
+
+main .single-info .info-centered .info-content .title {
+  width: 30%;
+  color: #003f5e;
+}
+
+main .single-info .info-centered .info-content .talent {
+  width: 50%;
+}
+
+main .single-info .info-centered .info-content .talent h2 {
+  border-bottom: 1px solid lightgrey;
+  padding-bottom: 1.5rem;
+  color: #003f5e;
+}
+
+main .single-info .info-centered .info-content .talent .artists-container,
+main .single-info .info-centered .info-content .talent .writers-container {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid lightgrey;
+  padding: 0.5rem 0;
+}
+
+main .single-info .info-centered .info-content .talent .artists-container .artists,
+main .single-info .info-centered .info-content .talent .artists-container .writers,
+main .single-info .info-centered .info-content .talent .writers-container .artists,
+main .single-info .info-centered .info-content .talent .writers-container .writers {
+  width: 70%;
+}
+
+main .single-info .info-centered .info-content .talent .artists-container .artists a,
+main .single-info .info-centered .info-content .talent .artists-container .writers a,
+main .single-info .info-centered .info-content .talent .writers-container .artists a,
+main .single-info .info-centered .info-content .talent .writers-container .writers a {
+  text-decoration: none;
+  color: #00a9d9;
+}
+
+main .single-info .info-centered .info-content .specs {
+  width: 50%;
+  padding-left: 3rem;
+}
+
+main .single-info .info-centered .info-content .specs h2 {
+  border-bottom: 1px solid lightgrey;
+  padding-bottom: 1.5rem;
+  color: #003f5e;
+}
+
+main .single-info .info-centered .info-content .specs .series,
+main .single-info .info-centered .info-content .specs .price,
+main .single-info .info-centered .info-content .specs .sale {
+  display: flex;
+  border-bottom: 1px solid lightgrey;
+  padding: 0.5rem 0;
+}
+
+main .single-info .info-centered .info-content .specs .series a,
+main .single-info .info-centered .info-content .specs .price a,
+main .single-info .info-centered .info-content .specs .sale a {
+  text-decoration: none;
+  color: #00a9d9;
+}
+
+main .single-info .info-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 12rem;
+  border-top: 1px solid lightgrey;
+}
+
+main .single-info .info-footer .info-link {
+  width: 25%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  border-left: 1px solid lightgrey;
+  cursor: pointer;
+}
+
+main .single-info .info-footer .info-link img {
+  height: 50px;
+  filter: invert(1) opacity(0.3);
+}
+
+main .single-info .info-footer .info-link h4 {
+  filter: opacity(0.3);
+}
+
+main .single-info .info-footer .info-link:last-of-type {
+  border-right: 1px solid lightgrey;
 }
 

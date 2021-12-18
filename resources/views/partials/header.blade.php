@@ -9,7 +9,7 @@
     </div>
     <div class="header-main">
         <div class="logo-container">
-            <img src="../img/dc-logo.png" alt="" srcset="">
+            <img src="{{asset('img/dc-logo.png')}}" alt="" srcset="">
         </div>
         <nav>
             <a id="characters" href="{{route('characters')}}">CHARACTERS</a>
@@ -29,7 +29,7 @@
         <div class="search-container">
             <form action="#">
                 <input type="text" placeholder="Search">
-                <img src="../img/search-solid.svg" alt="">
+                <img src="{{asset('img/search-solid.svg')}}" alt="">
             </form>
         </div>
     </div>
