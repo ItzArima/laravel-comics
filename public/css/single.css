@@ -1,0 +1,73 @@
+main .jumbo-container {
+  height: 500px;
+}
+
+main .jumbo-container img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  -o-object-position: center 0;
+     object-position: center 0;
+}
+
+main .blue-bar {
+  background-color: #0282f9;
+  position: relative;
+  height: 75px;
+}
+
+main .blue-bar .card {
+  position: absolute;
+  width: 15%;
+  bottom: 50%;
+  left: 12rem;
+  border: 4px solid white;
+  /* sometimes glitches */
+}
+
+main .blue-bar .card img {
+  width: 100%;
+}
+
+main .blue-bar .card .top {
+  position: absolute;
+  top: 0;
+  background-color: #00a9d9;
+}
+
+main .blue-bar .card .bottom {
+  position: absolute;
+  bottom: 0;
+  background-color: #00a9d9;
+  width: 100%;
+  text-align: center;
+}
+
+main .single-content {
+  padding: 0 12rem;
+}
+
+main .single-content .description-container {
+  display: flex;
+}
+
+main .single-content .description-container .description .green-bar {
+  background-color: #55ba59;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #357739;
+}
+
+main .single-content .description-container .description .green-bar .left,
+main .single-content .description-container .description .green-bar .right {
+  padding: 0.5rem 1rem;
+}
+
+main .single-content .description-container .description .green-bar .left {
+  border-right: 1px solid #357739;
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+}
+

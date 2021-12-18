@@ -12,6 +12,8 @@
         <!-- CSS -->
         <link rel="stylesheet" href="{{asset('css/app.css')}}">
 
+        <!-- Custom CSS -->
+        @yield('CSS')
     </head>
     <body>
         <!-- Header -->

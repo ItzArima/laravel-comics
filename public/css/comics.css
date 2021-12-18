@@ -1,0 +1,61 @@
+main {
+  background-color: #1c1c1c;
+}
+
+main .jumbo-container {
+  position: relative;
+  height: 500px;
+}
+
+main .jumbo-container img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  -o-object-position: center 0;
+     object-position: center 0;
+}
+
+main .jumbo-container .title {
+  position: absolute;
+  bottom: -20px;
+  background-color: #0282f9;
+  left: 9rem;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 1rem;
+  color: white;
+}
+
+main .comicses-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 9rem;
+  justify-content: space-between;
+}
+
+main .comicses-container .comics {
+  width: 16.6666666667%;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1rem;
+  color: white;
+}
+
+main .comicses-container .comics img {
+  margin-bottom: 1rem;
+}
+
+main .button-container {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+
+main .button-container button {
+  background-color: #0282f9;
+  padding: 0.5rem;
+  border: 0;
+  color: white;
+}
+

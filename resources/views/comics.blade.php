@@ -1,5 +1,8 @@
 @extends('layout.app')
 
+@section('CSS')
+    <link rel="stylesheet" href="{{asset('css/comics.css')}}">
+@endsection
 
 @section('content')
     <main>
