@@ -12,17 +12,17 @@
             <img src="{{asset('img/dc-logo.png')}}" alt="" srcset="">
         </div>
         <nav>
-            <a id="characters" href="{{route('characters')}}">CHARACTERS</a>
-            <a id="comics" href="{{route('comics')}}">COMICS</a>
-            <a id="movies" href="{{route('movies')}}">MOVIES</a>
-            <a id="tv" href="{{route('tv')}}">TV</a>
-            <a id="games" href="{{route('games')}}">GAMES</a>
-            <a id="collectibles" href="{{route('collectibles')}}">COLLECTIBLES</a>
-            <a id="videos" href="{{route('videos')}}">VIDEOS</a>
-            <a id="fans" href="{{route('fans')}}">FANS</a>
-            <a id="news" href="{{route('news')}}">NEWS</a>    
+            <a class="{{Route::currentRouteName() === 'characters' ? 'active' : ''}}" href="{{route('characters')}}">CHARACTERS</a>
+            <a class="{{Route::currentRouteName() === 'comics' ? 'active' : ''}}" href="{{route('comics')}}">COMICS</a>
+            <a class="{{Route::currentRouteName() === 'movies' ? 'active' : ''}}" href="{{route('movies')}}">MOVIES</a>
+            <a class="{{Route::currentRouteName() === 'tv' ? 'active' : ''}}" href="{{route('tv')}}">TV</a>
+            <a class="{{Route::currentRouteName() === 'games' ? 'active' : ''}}" href="{{route('games')}}">GAMES</a>
+            <a class="{{Route::currentRouteName() === 'collectibles' ? 'active' : ''}}" href="{{route('collectibles')}}">COLLECTIBLES</a>
+            <a class="{{Route::currentRouteName() === 'videos' ? 'active' : ''}}" href="{{route('videos')}}">VIDEOS</a>
+            <a class="{{Route::currentRouteName() === 'fans' ? 'active' : ''}}" href="{{route('fans')}}">FANS</a>
+            <a class="{{Route::currentRouteName() === 'news' ? 'active' : ''}}" href="{{route('news')}}">NEWS</a>    
             <div class="shop-select">
-                <a id="shop" href="{{route('shop')}}">SHOP</a>
+                <a class="{{Route::currentRouteName() === 'shop' ? 'active' : ''}}" href="{{route('shop')}}">SHOP</a>
                 <p>&dtrif;</p>
             </div>        
         </nav>
