@@ -13,7 +13,7 @@
         </div>
         <nav>
             <a class="{{Route::currentRouteName() === 'characters' ? 'active' : ''}}" href="{{route('characters')}}">CHARACTERS</a>
-            <a class="{{Route::currentRouteName() === 'comics' ? 'active' : ''}}" href="{{route('comics')}}">COMICS</a>
+            <a class="{{(Route::currentRouteName() === 'comics')||(Route::currentRouteName() === 'single') ? 'active' : ''}}" href="{{route('comics')}}">COMICS</a>
             <a class="{{Route::currentRouteName() === 'movies' ? 'active' : ''}}" href="{{route('movies')}}">MOVIES</a>
             <a class="{{Route::currentRouteName() === 'tv' ? 'active' : ''}}" href="{{route('tv')}}">TV</a>
             <a class="{{Route::currentRouteName() === 'games' ? 'active' : ''}}" href="{{route('games')}}">GAMES</a>
