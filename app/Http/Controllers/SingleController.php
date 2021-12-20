@@ -8,8 +8,14 @@ class SingleController extends Controller
 {
     public function show($id){
         $comics = config('db');
-        return view('single', [
-            'comics' => $comics[$id],
-        ]);
+
+        if(is_numeric($id) && $id >= 0 && $id < count($comics)){
+            return view('single', [
+                'comics' => $comics[$id],
+            ]);
+        }
+        else{
+            abort(404);
+        }13
     }
 }
