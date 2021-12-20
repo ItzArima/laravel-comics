@@ -16,6 +16,6 @@ class SingleController extends Controller
         }
         else{
             abort(404);
-        }13
+        }
     }
 }
